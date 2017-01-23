@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Fill up details"
+        android:textColor="@color/colorAccent"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+    <EditText
+        android:id="@+id/patientName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Patient name" />
+</android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_pmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Mobile Number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Problem: "
+        android:textSize="25dp"
+        android:textColor="@color/colorAccent"
+        >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.09" >
+
+        <CheckBox
+            android:id="@+id/badBreath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bad Breath"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/mouthSores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:text="Mouth Sores"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/gum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mouthSores"
+            android:layout_below="@+id/mouthSores"
+            android:text="Gum Disease"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cavity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/gum"
+            android:layout_alignBottom="@+id/gum"
+            android:layout_alignParentLeft="true"
+            android:text="Cavities"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/sensitivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cavity"
+            android:text="Sensitivity"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/grinding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/sensitivity"
+            android:layout_alignBottom="@+id/sensitivity"
+            android:layout_alignLeft="@+id/gum"
+            android:text="Grinding"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/wTeeth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/sensitivity"
+            android:text="Wisdom Teeth"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/erosion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wTeeth"
+            android:layout_alignBottom="@+id/wTeeth"
+            android:layout_alignLeft="@+id/grinding"
+            android:text="Erosion"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/yTeeth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/wTeeth"
+            android:text="Yellow Teeth"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/toothaches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/yTeeth"
+            android:layout_alignBottom="@+id/yTeeth"
+            android:layout_alignLeft="@+id/erosion"
+            android:text="Toothaches"
+            android:textSize="20sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/yTeeth"
+            >
+
+            <EditText
+                android:id="@+id/otherProblem"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Other problem? Mention here!"
+                >
+            </EditText>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/getap"
+            android:layout_width="256dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Get Appointment?"
+            android:theme="@style/MyButton"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

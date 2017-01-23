@@ -1,0 +1,109 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+   android:background="@drawable/border"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+        android:padding="20dp"
+    >
+
+    <TextView
+        android:text="Enter the details*"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/enterDetails"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorAccent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Your good name?"
+        android:textSize="20sp"
+            />
+      </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Your age?"
+        android:textSize="20sp"
+            />
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Your email?"
+        android:textSize="20sp"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_mymobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        >
+
+    <EditText
+        android:id="@+id/mymobile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Your Mobile no.?"
+        android:textSize="20sp"
+            />
+</android.support.design.widget.TextInputLayout>
+    
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="START"
+        android:layout_marginTop="50dp"
+        android:theme="@style/MyButton"
+        android:textColor="#fff"
+        android:textSize="20sp"
+            ></Button>
+
+
+    
+</LinearLayout>
+
+</LinearLayout>

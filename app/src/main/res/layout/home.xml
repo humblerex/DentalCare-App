@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    
+    
+    <ImageView 
+        android:id="@+id/imageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:background="@drawable/border"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ap"
+                   />
+    
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/border"
+    android:text="Welcome! Ashwani"
+    android:textColor="@color/colorAccent"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:padding="5dp"
+    android:gravity="center"
+    android:id="@+id/nameDisplay"
+    ></TextView>
+
+    <GridView
+        android:padding="5dp"
+        android:numColumns="auto_fit"
+         android:gravity="center"
+         android:columnWidth="100dp"
+         android:stretchMode="columnWidth"
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/grid"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:drawSelectorOnTop="true"
+        ></GridView>
+
+
+
+</LinearLayout>

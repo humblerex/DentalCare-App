@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="solution.dental.ash.dentalcare.Contact">
+
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@mipmap/callus"
+        android:id="@+id/callus"
+        android:clickable="true"
+        android:onClick="callus"
+        ></ImageView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textcallus"
+    android:layout_below="@+id/callus"
+    android:text="CALL US"
+    android:gravity="center"
+    android:layout_marginTop="5dp"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    />
+    <ImageView
+        android:id="@+id/mailus"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@mipmap/mail"
+        android:layout_below="@+id/textcallus"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:onClick="mailus"
+             ></ImageView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textmailus"
+        android:layout_below="@+id/mailus"
+        android:text="MAIL US"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

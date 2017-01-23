@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<RelativeLayout
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="solution.dental.ash.dentalcare.About">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="About Us"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/aboutustext"
+        android:layout_marginTop="10dp"
+         ></TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/aboutus"
+        android:text="@string/about"
+        android:layout_below="@+id/aboutustext"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        ></TextView>
+
+
+
+    <TextView
+        android:layout_below="@+id/aboutus"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Our Philosophy"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/ourPhilosophy"
+android:layout_marginTop="20dp"
+        ></TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/Philosophy"
+        android:text="@string/philosophy"
+        android:layout_below="@+id/ourPhilosophy"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        ></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/aboutone"
+        android:id="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:alpha="0.2"
+
+        />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@+id/Philosophy"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Our Standards"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/ourStandards"
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/standards"
+        android:text="@string/standards"
+        android:layout_below="@+id/ourStandards"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        ></TextView>
+
+
+    <TextView
+        android:layout_below="@+id/standards"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Safety"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:id="@+id/ourSafety"
+        android:layout_marginTop="20dp"
+        ></TextView>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/safety"
+        android:text="@string/safety"
+        android:layout_below="@+id/ourSafety"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        ></TextView>
+
+
+
+</RelativeLayout>
+</ScrollView>
